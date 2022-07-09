@@ -1,0 +1,117 @@
+@use "variables" as *;
+
+div.navigation {
+  align-items: center;
+  font-weight: 500;
+  z-index: 3;
+  background-color: $light;
+  width: 100%;
+  position: fixed;
+  display: grid;
+  border-bottom: 1px solid $secondary;
+}
+  
+nav.social{
+  opacity: 0;
+  animation: open ease-out 0.6s forwards;
+  display: flex;
+  background-color: $light;
+  justify-content: flex-end;
+  justify-items: flex-end;
+  margin-right: 0;
+  li{
+    display: inline-flex;
+    align-items: center;
+    margin: 0 1rem;
+    a{
+      padding: 0.7rem;
+      transition-duration: 0.4s;
+      &:hover{
+        filter: brightness(1.5)
+      }
+    }
+  }
+  ul{
+    list-style: none;
+  }
+}
+
+.main-navigation{
+  margin-left: 6rem;
+  background-color: $light;
+  .hidden{
+    margin-top: 3rem;
+    position: absolute;
+    li{
+      display: flex;
+      flex-direction: row;
+    }
+    
+  }
+  li{
+    display: inline-flex;
+    margin: 0 1rem;
+  }
+  ul{
+    display: grid;
+    list-style: none;
+    align-items: center;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+  }
+  @media only screen and (max-width: 1000px) {
+    &{
+      display: none;
+    }
+  }
+}
+
+.main-navigation li a{
+  padding: 1rem;
+  &:hover{
+    filter: brightness(1.5)
+  }
+}
+
+@keyframes open{
+  0%{
+      margin-right: 0;
+      opacity: 0;
+  }
+  100%{
+      margin-right: 6rem;
+      opacity: 1;
+  }
+}
+
+img.social-media{
+  filter: invert(0.4);
+}
+
+#burger-menu{
+  cursor: pointer;
+  padding: 2rem;
+  display: none;
+  div{
+    width: 2rem;
+    margin: 0.5rem 0;
+    border-bottom: 3px solid #333;
+  }
+  @media only screen and (max-width: 1000px) {
+    &{
+      display: block;
+    }
+  }
+}
+
+.burger-navigation{
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+}
+
+.close{
+  cursor: pointer;
+  padding: 0.5rem;
+}

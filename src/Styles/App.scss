@@ -1,0 +1,48 @@
+@use "variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
+//font-family: 'Roboto Flex', sans-serif;
+
+//global variables
+html{
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $dark;
+}
+
+h1{
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+p{
+  line-height: 1.3rem;
+}
+
+a{
+  text-decoration: none;
+  color: $dark;
+  transition-duration: 0.4s;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+
+button{
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background:  linear-gradient($primary, $primary-dark);
+  color: $light;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(1.3);
+  }
+}

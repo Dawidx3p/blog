@@ -1,0 +1,20 @@
+@use "variables" as *;
+
+#newsletter-form{
+    input{
+        padding: 1rem;
+        font-size: 1rem;
+        font-family: $font-family;
+        margin: 0.6rem 0.5rem;
+    }
+    input[type=submit]{
+        background: linear-gradient($primary, $primary-dark);
+        color: $light;
+        border: 1px solid $light;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            filter: brightness(1.2)
+        }
+    }
+}

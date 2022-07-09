@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+.section-title{
+    margin-top: 6rem;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 0;
+    .underline{
+        justify-self: center;
+        padding: 0.6rem 0;
+        width: 130%;
+        border-bottom: 1px solid $secondary;
+    }
+}

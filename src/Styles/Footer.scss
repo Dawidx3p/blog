@@ -1,0 +1,14 @@
+@use 'variables' as *;
+footer{
+    border-top: 1px solid $secondary;
+    padding: 8vh 3vw;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    .social-media{
+        justify-self: end;
+        a{
+            margin: 0 1rem;
+        }
+    }
+}
