@@ -11,7 +11,7 @@ type InitialValues = {
 
 const Register = () => {
     const [isSubmitting, setSubmitting] = useState(false);
-    const [message, setMessage] = useState('');
+    const [message] = useState('');
     
     const onSubmit = (values: InitialValues ) => {
         setSubmitting(true)
